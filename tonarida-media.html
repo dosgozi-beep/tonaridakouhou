@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>届け方 ― TONARIDA 広報方針</title>
+<meta name="description" content="早稲田の街を歩くのは1,000人。でもこの物語は、10万人に届けたい。TONARIDAの発信の考え方と約束を公開します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@400;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#FBFBF9;
+  --sumi:#161613;
+  --ai:#1E3A5F;
+  --shu:#AF3E2B;
+  --wakakusa:#7BA05B;
+  --line:rgba(22,22,19,.14);
+  --serif:'Shippori Mincho B1', serif;
+  --sans:'Zen Kaku Gothic New', sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--sumi);
+  font-family:var(--sans);
+  font-size:16px;
+  line-height:1.9;
+  -webkit-font-smoothing:antialiased;
+}
+::selection{background:var(--ai);color:var(--paper)}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+
+/* ───────── header ───────── */
+header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,251,249,.88);
+  backdrop-filter:blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.head-inner{
+  max-width:1080px;margin:0 auto;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 24px;gap:16px;
+}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--sumi)}
+.logo-mark{display:flex;gap:3px}
+.logo-mark span{width:13px;height:13px;display:block}
+.logo-mark .o{border:2px solid var(--sumi)}
+.logo-mark .f{background:var(--ai)}
+.logo-name{font-family:var(--serif);font-weight:700;letter-spacing:.14em;font-size:15px}
+.head-nav{display:flex;gap:20px}
+.head-nav a{
+  font-size:12px;letter-spacing:.12em;color:var(--ai);
+  text-decoration:none;font-weight:700;
+}
+.head-nav a:hover{color:var(--shu)}
+
+/* ───────── hero ───────── */
+.hero{padding:100px 0 80px}
+.hero .eyebrow{
+  font-size:12px;letter-spacing:.32em;color:var(--shu);
+  font-weight:700;margin-bottom:26px;
+}
+.hero h1{
+  font-family:var(--serif);font-weight:800;
+  font-size:clamp(34px,6.6vw,62px);
+  line-height:1.4;letter-spacing:.04em;
+}
+.hero h1 .num{color:var(--ai)}
+.hero .lede{
+  margin-top:34px;max-width:620px;
+  font-size:15.5px;color:rgba(22,22,19,.78);
+}
+.hero .lede strong{color:var(--sumi);font-weight:700}
+
+/* ───────── funnel (nested squares) ───────── */
+section{padding:90px 0;border-top:1px solid var(--line)}
+.sec-eyebrow{
+  font-size:12px;letter-spacing:.3em;color:var(--shu);font-weight:700;
+  margin-bottom:18px;
+}
+.sec-title{
+  font-family:var(--serif);font-weight:700;
+  font-size:clamp(26px,4.2vw,38px);line-height:1.5;letter-spacing:.05em;
+  margin-bottom:28px;
+}
+.sec-lede{max-width:620px;color:rgba(22,22,19,.78);font-size:15px}
+
+.funnel-flex{
+  display:flex;gap:clamp(30px,6vw,70px);align-items:center;
+  margin-top:56px;flex-wrap:wrap;
+}
+.nest{
+  position:relative;width:min(320px,80vw);aspect-ratio:1;
+  flex-shrink:0;
+}
+.nest div{position:absolute;border:1.5px solid var(--ai)}
+.nest .n1{inset:0;border-style:dashed;opacity:.45}
+.nest .n2{inset:19%;opacity:.75}
+.nest .n3{inset:38%;background:var(--ai);border:none}
+.nest span{
+  position:absolute;font-size:11px;letter-spacing:.14em;
+  background:var(--paper);padding:0 8px;font-weight:700;
+}
+.nest .l1{top:-9px;left:12px;color:rgba(22,22,19,.55)}
+.nest .l2{top:calc(19% - 9px);left:calc(19% + 12px);color:var(--ai)}
+.nest .l3{top:50%;left:50%;transform:translate(-50%,-50%);color:var(--paper);background:transparent;letter-spacing:.18em;text-align:center;line-height:1.6}
+.funnel-desc{flex:1;min-width:260px}
+.funnel-desc dl{display:flex;flex-direction:column;gap:26px}
+.funnel-desc dt{
+  font-family:var(--serif);font-weight:700;font-size:17px;letter-spacing:.06em;
+  display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;
+}
+.funnel-desc dt i{width:11px;height:11px;flex-shrink:0;align-self:center}
+.funnel-desc dt .solid{background:var(--ai)}
+.funnel-desc dt .open{border:1.5px solid var(--ai)}
+.funnel-desc dt .dash{border:1.5px dashed var(--ai);opacity:.6}
+.funnel-desc dt b{font-family:var(--serif);color:var(--shu);font-size:15px;letter-spacing:.08em}
+.funnel-desc dd{font-size:14px;color:rgba(22,22,19,.75);margin-top:6px}
+
+/* ───────── fan roles ───────── */
+.fanroles{
+  margin-top:56px;display:grid;grid-template-columns:repeat(2,1fr);
+  gap:1px;background:var(--line);border:1px solid var(--line);
+}
+.fanrole{background:var(--paper);padding:32px 28px}
+.fanrole h3{
+  font-family:var(--serif);font-weight:700;font-size:18px;
+  letter-spacing:.06em;line-height:1.7;margin-bottom:12px;
+  display:flex;align-items:center;gap:12px;
+}
+.fanrole h3 i{width:11px;height:11px;background:var(--wakakusa);flex-shrink:0}
+.fanrole p{font-size:13.5px;color:rgba(22,22,19,.78)}
+
+/* ───────── content pillars ───────── */
+.pillars{margin-top:56px;display:flex;flex-direction:column;gap:22px}
+.pillar{
+  border:1px solid var(--line);padding:30px 32px;
+  display:flex;gap:26px;align-items:flex-start;
+}
+.pillar-mark{
+  flex-shrink:0;width:44px;height:44px;
+  border:1.5px solid var(--sumi);
+  display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-weight:700;font-size:15px;
+}
+.pillar-body h3{
+  font-family:var(--serif);font-weight:700;font-size:18.5px;
+  letter-spacing:.06em;line-height:1.7;margin-bottom:8px;
+}
+.pillar-body p{font-size:13.5px;color:rgba(22,22,19,.78)}
+.pillar-body .freq{
+  display:inline-block;margin-top:12px;
+  font-size:11px;letter-spacing:.2em;font-weight:700;color:var(--wakakusa);
+  border:1px solid rgba(123,160,91,.5);padding:4px 12px;
+}
+
+/* ───────── places ───────── */
+.places{
+  margin-top:56px;display:grid;grid-template-columns:repeat(2,1fr);
+  gap:1px;background:var(--line);border:1px solid var(--line);
+}
+.place{background:var(--paper);padding:30px 28px}
+.place h3{
+  font-family:var(--serif);font-weight:700;font-size:17px;
+  letter-spacing:.08em;margin-bottom:10px;
+}
+.place .p-role{
+  font-size:11px;letter-spacing:.2em;color:var(--shu);font-weight:700;
+  margin-bottom:10px;
+}
+.place p{font-size:13.5px;color:rgba(22,22,19,.78)}
+
+/* ───────── fire (dark) ───────── */
+.fire{background:var(--sumi);color:var(--paper)}
+.fire .sec-eyebrow{color:var(--wakakusa)}
+.fire .sec-title{color:var(--paper)}
+.fire .sec-lede{color:rgba(251,251,249,.75)}
+.fire-squares{display:flex;gap:6px;margin-top:44px;flex-wrap:wrap;align-items:center}
+.fire-squares i{width:15px;height:15px;display:block;border:1.5px solid rgba(251,251,249,.5)}
+.fire-squares i.on{background:var(--shu);border-color:var(--shu)}
+.fire-squares i.warm{background:transparent;border-color:var(--shu)}
+.fire-caption{margin-top:16px;font-size:12px;letter-spacing:.1em;color:rgba(251,251,249,.55)}
+
+/* ───────── cta ───────── */
+.cta{text-align:center;padding:110px 0}
+.cta .sec-title{margin-bottom:16px}
+.cta p{color:rgba(22,22,19,.75);font-size:15px;max-width:520px;margin:0 auto}
+.cta-btns{margin-top:40px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.cta-btn{
+  display:inline-block;
+  font-family:var(--serif);font-weight:700;letter-spacing:.16em;
+  font-size:14.5px;color:var(--paper);background:var(--ai);
+  padding:17px 44px;text-decoration:none;
+  transition:background .25s ease;
+}
+.cta-btn:hover{background:var(--shu)}
+.cta-btn.ghost{
+  background:transparent;color:var(--ai);
+  border:1.5px solid var(--ai);
+}
+.cta-btn.ghost:hover{color:var(--shu);border-color:var(--shu);background:transparent}
+.cta-sub{margin-top:18px;font-size:12px;color:rgba(22,22,19,.5);letter-spacing:.08em}
+
+/* ───────── footer ───────── */
+footer{
+  border-top:1px solid var(--line);
+  padding:44px 0 60px;font-size:12px;color:rgba(22,22,19,.55);
+}
+footer .foot-inner{max-width:880px;margin:0 auto;padding:0 24px;
+  display:flex;flex-direction:column;gap:8px}
+footer .foot-logo{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+footer .foot-logo span{width:10px;height:10px;display:block}
+footer .foot-logo .o{border:1.5px solid var(--sumi)}
+footer .foot-logo .f{background:var(--ai)}
+footer .foot-logo b{font-family:var(--serif);letter-spacing:.14em;font-size:13px;color:var(--sumi)}
+
+/* ───────── reveal ───────── */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+@media (max-width:720px){
+  .fanroles,.places{grid-template-columns:1fr}
+  section{padding:70px 0}
+  .pillar{flex-direction:column;gap:16px}
+  .head-nav{gap:12px}
+  .head-nav a{font-size:11px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="head-inner">
+    <a class="logo" href="tonarida-roadmap.html">
+      <span class="logo-mark"><span class="o"></span><span class="f"></span></span>
+      <span class="logo-name">TONARIDA</span>
+    </a>
+    <nav class="head-nav">
+      <a href="tonarida-roadmap.html">ロードマップ</a>
+      <a href="tonarida-wanted.html">仲間募集</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ═══════ HERO ═══════ -->
+<div class="hero">
+  <div class="wrap">
+    <p class="eyebrow rv">HOW WE REACH ― 届け方</p>
+    <h1 class="rv">歩くのは1,000人。<br>届けたいのは、<span class="num">10万人</span>。</h1>
+    <p class="lede rv">
+      早稲田の街を実際に歩けるのは、この街にいる人だけです。
+      でも、ここで起きていることは、日本のどの街にも起こりうることだと信じています。
+      だからわたしたちは、この物語を<strong>10万人に届け、1万人に応援してもらう</strong>ことを目指します。
+      その考え方と約束を、ここに公開します。
+    </p>
+  </div>
+</div>
+
+<!-- ═══════ FUNNEL ═══════ -->
+<section>
+  <div class="wrap">
+    <p class="sec-eyebrow rv">THREE NUMBERS ― 三つの数字</p>
+    <h2 class="sec-title rv">10万・1万・1,000。</h2>
+    <p class="sec-lede rv">
+      この三つの数字は、大きい順に偉いわけではありません。
+      関わり方が違うだけの、三つの層です。歩けない人には、歩けない人の役割があります。
+    </p>
+
+    <div class="funnel-flex rv">
+      <div class="nest" role="img" aria-label="届く人・応援する人・歩く人の三層の図">
+        <div class="n1"></div>
+        <div class="n2"></div>
+        <div class="n3"></div>
+        <span class="l1">届く人</span>
+        <span class="l2">応援する人</span>
+        <span class="l3">歩く人</span>
+      </div>
+      <div class="funnel-desc">
+        <dl>
+          <div>
+            <dt><i class="dash"></i>届く人<b>100,000人</b></dt>
+            <dd>SNSやWebで、早稲田の小さなムーブメントを知る人。まずは知ってもらうことから、すべてが始まります。</dd>
+          </div>
+          <div>
+            <dt><i class="open"></i>応援する人<b>10,000人</b></dt>
+            <dd>フォローし、広め、見守ってくれる全国のファン。早稲田に来られなくても、この物語の登場人物です。</dd>
+          </div>
+          <div>
+            <dt><i class="solid"></i>歩く人<b>1,000人</b></dt>
+            <dd>早稲田・高田馬場の街を実際に歩く仲間。詳しくは<a href="tonarida-roadmap.html">ロードマップ</a>で公開しています。</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FAN ROLES ═══════ -->
+<section>
+  <div class="wrap">
+    <p class="sec-eyebrow rv">FOR SUPPORTERS ― 遠くのあなたへ</p>
+    <h2 class="sec-title rv">応援も、役割です。</h2>
+    <p class="sec-lede rv">
+      「面白いけど、早稲田には行けない」──それでいいんです。
+      遠くにいる1万人にしかできないことが、四つあります。
+    </p>
+
+    <div class="fanroles rv">
+      <div class="fanrole">
+        <h3><i></i>見守る</h3>
+        <p>シゲの週次レポートを眺めて、街灯が直った小さなニュースを一緒に喜ぶ。それだけで、続ける力になります。</p>
+      </div>
+      <div class="fanrole">
+        <h3><i></i>広める</h3>
+        <p>「こんなことやってる学生がいるらしい」と、誰かに話す。シェアする。あなたの一押しが、次の誰かへの入口です。</p>
+      </div>
+      <div class="fanrole">
+        <h3><i></i>オンラインで関わる</h3>
+        <p>学びの会へのオンライン参加や、データ整理のリモート協力など、離れていてもできる関わり方を順次ひらいていきます。</p>
+      </div>
+      <div class="fanrole">
+        <h3><i></i>いつか、自分の街で</h3>
+        <p>早稲田で育てたこのかたちは、いずれ他の街へ手渡せるように整えます。「自分の大学でも」と思ったら、その火種はあなたです。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ CONTENT PILLARS ═══════ -->
+<section>
+  <div class="wrap">
+    <p class="sec-eyebrow rv">WHAT WE SHARE ― 届けるもの</p>
+    <h2 class="sec-title rv">飾らない記録を、決まったリズムで。</h2>
+    <p class="sec-lede rv">
+      バズを狙った企画より、続いている事実を。わたしたちが発信するのは、この四つです。
+    </p>
+
+    <div class="pillars">
+      <div class="pillar rv">
+        <div class="pillar-mark">壱</div>
+        <div class="pillar-body">
+          <h3>シゲの街レポート</h3>
+          <p>AI幹事長・草ノ根シゲが、その週のWalkで見つけた街の異変と、区に報告した内容、そして「直った数」を淡々と報告します。切れた街灯が直る。それがわたしたちの一番のニュースです。</p>
+          <span class="freq">毎週</span>
+        </div>
+      </div>
+      <div class="pillar rv">
+        <div class="pillar-mark">弐</div>
+        <div class="pillar-body">
+          <h3>ロードマップの実況</h3>
+          <p>いま仲間が何人で、どのフェーズにいるのか。うまくいったことも、いかなかったことも、成長の過程をそのまま見せます。完成品ではなく、つくっている途中を。</p>
+          <span class="freq">毎月</span>
+        </div>
+      </div>
+      <div class="pillar rv">
+        <div class="pillar-mark">参</div>
+        <div class="pillar-body">
+          <h3>隣人図鑑シリーズ</h3>
+          <p>賀川豊彦、中村哲、二宮尊徳──街と人のために生きた先人たちの物語を、短く紹介します。早稲田に縁がなくても持ち帰れる、わたしたちからの贈りものです。</p>
+          <span class="freq">連載</span>
+        </div>
+      </div>
+      <div class="pillar rv">
+        <div class="pillar-mark">肆</div>
+        <div class="pillar-body">
+          <h3>舞台裏の読みもの</h3>
+          <p>「なぜAIを幹事長にしたのか」「区役所に初めてレポートを持って行った日」。数字にならない物語を、長い文章でじっくり書きます。</p>
+          <span class="freq">毎月</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ PLACES ═══════ -->
+<section>
+  <div class="wrap">
+    <p class="sec-eyebrow rv">WHERE TO FIND US ― 会える場所</p>
+    <h2 class="sec-title rv">それぞれの場所で、違う顔を。</h2>
+
+    <div class="places rv">
+      <div class="place">
+        <p class="p-role">週次レポートの定点</p>
+        <h3>X</h3>
+        <p>シゲの街レポートと、ロードマップ実況の本拠地。毎週同じ曜日に、同じかたちで届けます。</p>
+      </div>
+      <div class="place">
+        <p class="p-role">街の空気と、短い物語</p>
+        <h3>Instagram / TikTok</h3>
+        <p>土曜朝のWalkの風景、隣人図鑑の短い動画。はじめましての人に、いちばん最初に会う場所です。</p>
+      </div>
+      <div class="place">
+        <p class="p-role">じっくり読む舞台裏</p>
+        <h3>note</h3>
+        <p>月にひとつ、長い文章を。この団体が何を考えて動いているのかは、ここがいちばん正直です。</p>
+      </div>
+      <div class="place">
+        <p class="p-role">仲間と応援の窓口</p>
+        <h3>LINE公式</h3>
+        <p>早稲田で歩きたい人も、遠くから応援したい人も、登録はここから。お知らせを、静かに届けます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FIRE ═══════ -->
+<section class="fire">
+  <div class="wrap">
+    <p class="sec-eyebrow rv">AND THEN ― その先に</p>
+    <h2 class="sec-title rv">早稲田の小さな火を、日本へ。</h2>
+    <p class="sec-lede rv">
+      毎週土曜、学生が街を30分歩く。それだけのことが、10万人に届いたとき、
+      どこかの街の誰かが「うちでもやれるかもしれない」と思う。
+      わたしたちが本当に届けたいのは、活動の報告ではなく、その予感です。
+      1万人の応援は、次の街の最初のひとりを探すための、いちばん確かな方法だと信じています。
+    </p>
+    <div class="fire-squares rv" aria-hidden="true">
+      <i class="on"></i><i class="warm"></i><i class="warm"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <p class="fire-caption rv">■ 早稲田の火 ── □ 火を待つ、どこかの街。</p>
+  </div>
+</section>
+
+<!-- ═══════ CTA ═══════ -->
+<section class="cta">
+  <div class="wrap">
+    <p class="sec-eyebrow rv">JOIN THE 10,000 ― 1万人のひとりに</p>
+    <h2 class="sec-title rv">まずは、見守るところから。</h2>
+    <p class="rv">
+      フォローひとつで、あなたは10万人のひとりから、1万人のひとりになります。
+      早稲田で歩きたくなったら、いつでもこちら側へ。
+    </p>
+    <div class="cta-btns rv">
+      <a class="cta-btn" href="https://example.com" target="_blank" rel="noopener">応援登録(LINE)</a>
+      <a class="cta-btn ghost" href="https://example.com" target="_blank" rel="noopener">SNSをフォロー</a>
+    </div>
+    <p class="cta-sub rv">手続き・会費は、ありません。</p>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-logo">
+      <span class="o"></span><span class="f"></span>
+      <b>TONARIDA</b>
+    </div>
+    <p>早稲田の街で、在野の隣人になる。</p>
+    <p>運営:早稲田大学の学生・OGOB有志 ／ 幹事長:草ノ根シゲ(AIによって生成された架空のキャラクターです)</p>
+    <p>信仰・宗教・国籍・所属は問いません。勧誘・献金のお願いは行いません。</p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.rv').forEach(function(el){ el.classList.add('in'); });
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  },{threshold:.12});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+})();
+</script>
+
+</body>
+</html>
